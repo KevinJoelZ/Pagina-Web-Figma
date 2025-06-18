@@ -72,4 +72,5 @@ Puedes personalizar los colores de la página modificando las variables CSS en e
 
 - cambios1: Sección de introducción expandida y centrada
 - cambios2: Documentación actualizada con historial de cambios
-- cambios3: Mejoras en la documentación del proyecto 
+- cambios3: Mejoras en la documentación del proyecto
+- cambios4: Prueba de commit para historial 
