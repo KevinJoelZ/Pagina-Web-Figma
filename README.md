@@ -70,4 +70,6 @@ Puedes personalizar los colores de la página modificando las variables CSS en e
 
 ## Historial de Cambios
 
-- cambios1: Sección de introducción expandida y centrada 
+- cambios1: Sección de introducción expandida y centrada
+- cambios2: Documentación actualizada con historial de cambios
+- cambios3: Mejoras en la documentación del proyecto 
