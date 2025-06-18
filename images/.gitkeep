@@ -1,6 +1,6 @@
 # Este archivo permite que la carpeta images se mantenga en el repositorio
 # incluso cuando está vacía. Puedes eliminarlo cuando agregues las imágenes.
-
+ 
 # Imágenes necesarias para el proyecto:
 # - figma-logo.png
 # - crear-componente.png  
