@@ -157,7 +157,7 @@ h2::after {
 .intro-text p {
     margin-bottom: 1.5rem;
     line-height: 1.8;
-    text-align: center;
+    text-align: justify;
 }
 
 .intro-text ul {
