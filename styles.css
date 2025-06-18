@@ -538,4 +538,111 @@ footer {
     .teoria-intro {
         padding: 0 1rem;
     }
+}
+
+/* Estilos para las nuevas imágenes */
+.intro-figma-image,
+.fundamentos-image,
+.comandos-gif,
+.componentes-image,
+.prototipado-gif {
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.intro-figma-image img,
+.fundamentos-image img,
+.comandos-gif img,
+.componentes-image img,
+.prototipado-gif img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
+    filter: brightness(1) contrast(1.05);
+}
+
+.intro-figma-image img:hover,
+.fundamentos-image img:hover,
+.comandos-gif img:hover,
+.componentes-image img:hover,
+.prototipado-gif img:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    filter: brightness(1.05) contrast(1.1);
+}
+
+/* Estilos específicos para cada sección */
+.fundamentos-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.comandos-gif {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--background-color), var(--card-background));
+    border-radius: 20px;
+}
+
+.componentes-image {
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.prototipado-gif {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--card-background), var(--background-color));
+    border-radius: 20px;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .intro-figma-image img,
+    .fundamentos-image img,
+    .comandos-gif img,
+    .componentes-image img,
+    .prototipado-gif img {
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .intro-figma-image img:hover,
+    .fundamentos-image img:hover,
+    .comandos-gif img:hover,
+    .componentes-image img:hover,
+    .prototipado-gif img:hover {
+        transform: translateY(-4px) scale(1.01);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .comandos-gif,
+    .prototipado-gif {
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-figma-image,
+    .fundamentos-image,
+    .comandos-gif,
+    .componentes-image,
+    .prototipado-gif {
+        margin: 1.5rem auto;
+    }
+    
+    .intro-figma-image img,
+    .fundamentos-image img,
+    .comandos-gif img,
+    .componentes-image img,
+    .prototipado-gif img {
+        border-radius: 8px;
+    }
 } 
