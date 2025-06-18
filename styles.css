@@ -123,28 +123,56 @@ h2::after {
     border-radius: 2px;
 }
 
-/* Sección de Introducción */
-.intro-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: start;
+/* Estilos para la sección de introducción actualizada */
+.intro-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
     padding: 2rem;
+}
+
+.intro-content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .intro-text {
     font-size: 1.1rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro-text h3 {
+    color: var(--secondary-color);
+    margin: 2rem 0 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.intro-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    text-align: center;
 }
 
 .intro-text ul {
     list-style: none;
-    margin-top: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+    display: inline-block;
+    max-width: 600px;
 }
 
 .intro-text li {
     margin-bottom: 0.5rem;
     padding-left: 1.5rem;
     position: relative;
+    text-align: left;
 }
 
 .intro-text li::before {
@@ -152,6 +180,23 @@ h2::after {
     position: absolute;
     left: 0;
     color: var(--secondary-color);
+}
+
+.intro-image {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.intro-image img:hover {
+    transform: scale(1.02);
 }
 
 .intro-features {
@@ -350,10 +395,6 @@ footer {
         gap: 1rem;
     }
 
-    .intro-content {
-        grid-template-columns: 1fr;
-    }
-
     .commands-grid,
     .component-info,
     .recursos-grid {
@@ -450,18 +491,6 @@ footer {
 .concepto-content strong {
     color: var(--primary-color);
     font-weight: 600;
-}
-
-/* Estilos para la sección de introducción actualizada */
-.intro-text h3 {
-    color: var(--secondary-color);
-    margin: 2rem 0 1rem;
-    font-size: 1.5rem;
-}
-
-.intro-text p {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
 }
 
 /* Estilos para la sección de fundamentos */
