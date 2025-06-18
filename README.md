@@ -66,4 +66,8 @@ Puedes personalizar los colores de la página modificando las variables CSS en e
     --background-color: #f5f5f5;
     --card-background: #ffffff;
 }
-``` 
+```
+
+## Historial de Cambios
+
+- cambios1: Sección de introducción expandida y centrada 
