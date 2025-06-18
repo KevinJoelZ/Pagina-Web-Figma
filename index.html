@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Completa de Figma - Teoría y Práctica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/figma-logo.png" alt="Logo de Figma">
+            </div>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#fundamentos">Fundamentos</a></li>
+                <li><a href="#comandos">Comandos</a></li>
+                <li><a href="#componentes">Componentes</a></li>
+                <li><a href="#conceptos-avanzados">Conceptos Avanzados</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Guía Completa de Figma</h1>
+            <p>Teoría, conceptos y práctica para dominar Figma</p>
+        </section>
+
+        <section id="introduccion" class="intro-section">
+            <h2>¿Qué es Figma?</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h3>Definición y Características</h3>
+                    <p>Figma es una herramienta de diseño de interfaces y prototipado basada en la nube que ha revolucionado el flujo de trabajo en diseño digital. A diferencia de otras herramientas tradicionales, Figma opera completamente en el navegador, lo que permite:</p>
+                    <ul>
+                        <li>Colaboración en tiempo real entre equipos</li>
+                        <li>Acceso multiplataforma sin necesidad de instalación</li>
+                        <li>Almacenamiento automático en la nube</li>
+                        <li>Sistema de versionado integrado</li>
+                        <li>Plugins y extensiones comunitarias</li>
+                    </ul>
+                    
+                    <h3>Historia y Evolución</h3>
+                    <p>Lanzado en 2016, Figma fue creado para resolver las limitaciones de las herramientas de diseño tradicionales. Su enfoque en la colaboración y la accesibilidad ha transformado la manera en que los equipos trabajan en el diseño de productos digitales.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="fundamentos" class="fundamentos-section">
+            <h2>Fundamentos de Figma</h2>
+            <div class="teoria-grid">
+                <div class="teoria-card">
+                    <h3>Interfaz de Usuario</h3>
+                    <div class="concepto-content">
+                        <h4>Áreas Principales:</h4>
+                        <ul>
+                            <li><strong>Barra de Herramientas:</strong> Contiene las herramientas principales de diseño</li>
+                            <li><strong>Panel de Capas:</strong> Muestra la jerarquía de elementos</li>
+                            <li><strong>Panel de Propiedades:</strong> Permite modificar atributos de elementos</li>
+                            <li><strong>Área de Trabajo:</strong> Espacio principal de diseño</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="teoria-card">
+                    <h3>Conceptos Básicos</h3>
+                    <div class="concepto-content">
+                        <h4>Elementos Fundamentales:</h4>
+                        <ul>
+                            <li><strong>Frames:</strong> Contenedores principales que definen dimensiones y comportamiento</li>
+                            <li><strong>Grupos:</strong> Conjuntos de elementos relacionados</li>
+                            <li><strong>Capas:</strong> Elementos individuales en el diseño</li>
+                            <li><strong>Vectores:</strong> Formas y trazados escalables</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="teoria-card">
+                    <h3>Sistema de Diseño</h3>
+                    <div class="concepto-content">
+                        <h4>Elementos del Sistema:</h4>
+                        <ul>
+                            <li><strong>Estilos:</strong> Definiciones reutilizables de color, texto y efectos</li>
+                            <li><strong>Componentes:</strong> Elementos reutilizables y mantenibles</li>
+                            <li><strong>Bibliotecas:</strong> Colecciones compartidas de recursos</li>
+                            <li><strong>Variables:</strong> Valores dinámicos para propiedades</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comandos" class="comandos-section">
+            <h2>Comandos y Atajos en Figma</h2>
+            <div class="teoria-intro">
+                <p>Los comandos en Figma están diseñados para optimizar el flujo de trabajo del diseñador. Comprender y dominar estos atajos es fundamental para aumentar la productividad y eficiencia en el proceso de diseño.</p>
+            </div>
+            <div class="commands-grid">
+                <div class="command-card">
+                    <h3>Conceptos de Navegación</h3>
+                    <ul>
+                        <li><span class="shortcut">Space + Arrastrar</span> Pan (mover vista)</li>
+                        <li><span class="shortcut">Ctrl + Rueda</span> Zoom</li>
+                        <li><span class="shortcut">Shift + 1</span> Zoom al 100%</li>
+                        <li><span class="shortcut">Shift + 2</span> Ajustar a pantalla</li>
+                        <li><span class="shortcut">N</span> Zoom a selección</li>
+                    </ul>
+                </div>
+                <div class="command-card">
+                    <h3>Básicos</h3>
+                    <ul>
+                        <li><span class="shortcut">Ctrl + C</span> Copiar</li>
+                        <li><span class="shortcut">Ctrl + V</span> Pegar</li>
+                        <li><span class="shortcut">Ctrl + Z</span> Deshacer</li>
+                        <li><span class="shortcut">Ctrl + D</span> Duplicar</li>
+                        <li><span class="shortcut">Ctrl + /</span> Buscar comandos</li>
+                        <li><span class="shortcut">Alt + Click</span> Copiar al arrastrar</li>
+                    </ul>
+                </div>
+                <div class="command-card">
+                    <h3>Herramientas</h3>
+                    <ul>
+                        <li><span class="shortcut">V</span> Herramienta de movimiento</li>
+                        <li><span class="shortcut">F</span> Marco/Frame</li>
+                        <li><span class="shortcut">R</span> Rectángulo</li>
+                        <li><span class="shortcut">O</span> Elipse</li>
+                        <li><span class="shortcut">L</span> Línea</li>
+                        <li><span class="shortcut">P</span> Pluma (dibujo vectorial)</li>
+                        <li><span class="shortcut">T</span> Texto</li>
+                        <li><span class="shortcut">K</span> Escala</li>
+                    </ul>
+                </div>
+                <div class="command-card">
+                    <h3>Organización</h3>
+                    <ul>
+                        <li><span class="shortcut">Ctrl + G</span> Agrupar</li>
+                        <li><span class="shortcut">Ctrl + Shift + G</span> Desagrupar</li>
+                        <li><span class="shortcut">Alt + L</span> Bloquear/Desbloquear</li>
+                        <li><span class="shortcut">Ctrl + ]</span> Traer al frente</li>
+                        <li><span class="shortcut">Ctrl + [</span> Enviar atrás</li>
+                        <li><span class="shortcut">Shift + A</span> Auto layout</li>
+                    </ul>
+                </div>
+                <div class="command-card">
+                    <h3>Alineación y Distribución</h3>
+                    <ul>
+                        <li><span class="shortcut">Alt + A</span> Alinear a la izquierda</li>
+                        <li><span class="shortcut">Alt + D</span> Alinear a la derecha</li>
+                        <li><span class="shortcut">Alt + H</span> Centrar horizontalmente</li>
+                        <li><span class="shortcut">Alt + V</span> Centrar verticalmente</li>
+                        <li><span class="shortcut">Alt + Shift + H</span> Distribuir horizontalmente</li>
+                        <li><span class="shortcut">Alt + Shift + V</span> Distribuir verticalmente</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="componentes" class="componentes-section">
+            <h2>Teoría de Componentes</h2>
+            <div class="teoria-intro">
+                <p>Los componentes son la base de un sistema de diseño escalable y mantenible. Representan elementos reutilizables que mantienen la consistencia en todo el diseño mientras permiten variaciones controladas.</p>
+            </div>
+            <div class="component-info">
+                <div class="component-card">
+                    <h3>Anatomía de un Componente</h3>
+                    <img src="images/crear-componente.png" alt="Anatomía de un componente en Figma">
+                    <h4>Elementos Principales:</h4>
+                    <ul>
+                        <li><strong>Componente Principal:</strong> La versión maestra que define las propiedades base</li>
+                        <li><strong>Instancias:</strong> Copias del componente principal que heredan sus propiedades</li>
+                        <li><strong>Propiedades:</strong> Atributos personalizables de cada instancia</li>
+                        <li><strong>Restricciones:</strong> Reglas que definen el comportamiento responsivo</li>
+                    </ul>
+                </div>
+
+                <div class="component-card">
+                    <h3>Sistema de Variantes</h3>
+                    <img src="images/variantes.png" alt="Sistema de variantes en Figma">
+                    <h4>Conceptos Clave:</h4>
+                    <ul>
+                        <li><strong>Set de Variantes:</strong> Colección de estados relacionados</li>
+                        <li><strong>Propiedades de Variante:</strong> Atributos que definen cada estado</li>
+                        <li><strong>Herencia:</strong> Relación entre variantes y sus instancias</li>
+                        <li><strong>Estados:</strong> Diferentes versiones de un mismo componente</li>
+                    </ul>
+                </div>
+
+                <div class="component-card">
+                    <h3>Auto-Layout</h3>
+                    <h4>Características:</h4>
+                    <ul>
+                        <li><strong>Dirección:</strong> Vertical u horizontal</li>
+                        <li><strong>Espaciado:</strong> Uniforme o personalizado</li>
+                        <li><strong>Alineación:</strong> Control preciso de elementos</li>
+                        <li><strong>Relleno:</strong> Espaciado interno consistente</li>
+                        <li><strong>Comportamiento:</strong> Reglas de redimensionamiento</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="conceptos-avanzados" class="conceptos-section">
+            <h2>Conceptos Avanzados</h2>
+            <div class="teoria-grid">
+                <div class="teoria-card">
+                    <h3>Sistemas de Diseño</h3>
+                    <div class="concepto-content">
+                        <h4>Elementos Clave:</h4>
+                        <ul>
+                            <li><strong>Tokens de Diseño:</strong> Variables que definen valores fundamentales</li>
+                            <li><strong>Bibliotecas de Componentes:</strong> Colecciones organizadas de elementos reutilizables</li>
+                            <li><strong>Documentación:</strong> Guías y reglas de uso</li>
+                            <li><strong>Versionado:</strong> Control de cambios y actualizaciones</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="teoria-card">
+                    <h3>Prototipado Avanzado</h3>
+                    <div class="concepto-content">
+                        <h4>Características:</h4>
+                        <ul>
+                            <li><strong>Smart Animate:</strong> Animaciones entre estados similares</li>
+                            <li><strong>Variables de Overlay:</strong> Capas superpuestas dinámicas</li>
+                            <li><strong>Condiciones:</strong> Lógica en las interacciones</li>
+                            <li><strong>Scrolling:</strong> Comportamiento de desplazamiento</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="teoria-card">
+                    <h3>Colaboración y Flujo de Trabajo</h3>
+                    <div class="concepto-content">
+                        <h4>Aspectos Importantes:</h4>
+                        <ul>
+                            <li><strong>Control de Versiones:</strong> Historial y branches</li>
+                            <li><strong>Comentarios:</strong> Feedback y revisiones</li>
+                            <li><strong>Permisos:</strong> Niveles de acceso y roles</li>
+                            <li><strong>Integración:</strong> Conexión con otras herramientas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="recursos-section">
+            <h2>Recursos y Documentación</h2>
+            <div class="recursos-grid">
+                <div class="recurso-card">
+                    <h3>Mejores Prácticas</h3>
+                    <ul>
+                        <li>Nombra tus componentes de manera consistente</li>
+                        <li>Usa Auto-layout para diseños responsivos</li>
+                        <li>Mantén una biblioteca de componentes organizada</li>
+                        <li>Documenta tus componentes y variantes</li>
+                        <li>Utiliza estilos de color y texto</li>
+                    </ul>
+                </div>
+                <div class="recurso-card">
+                    <h3>Enlaces Útiles</h3>
+                    <ul>
+                        <li><a href="https://help.figma.com" target="_blank">Documentación oficial de Figma</a></li>
+                        <li><a href="https://www.figma.com/community" target="_blank">Comunidad Figma</a></li>
+                        <li><a href="https://www.figma.com/resources/learn-design" target="_blank">Aprende diseño con Figma</a></li>
+                        <li><a href="https://www.figma.com/blog" target="_blank">Blog de Figma</a></li>
+                    </ul>
+                </div>
+                <div class="recurso-card">
+                    <h3>Plugins Recomendados</h3>
+                    <ul>
+                        <li>Auto Layout</li>
+                        <li>Content Reel</li>
+                        <li>Iconify</li>
+                        <li>Color Styles</li>
+                        <li>Design Lint</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Desarrollado con ❤️ para aprender Figma</p>
+            <p>Última actualización: 2024</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
