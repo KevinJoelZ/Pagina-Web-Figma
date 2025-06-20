@@ -50,12 +50,14 @@ nav {
     font-weight: bold;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     gap: 2rem;
+    text-align: center;
 }
 
 nav a {
@@ -64,6 +66,7 @@ nav a {
     font-weight: 500;
     transition: color 0.3s ease;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 nav a:hover {
@@ -89,17 +92,19 @@ main {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .hero p {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto;
+    text-align: center;
 }
 
 section {
     max-width: 1200px;
-    margin: 0 auto 4rem;
+    margin: 0 auto 3rem;
 }
 
 h2 {
@@ -248,16 +253,19 @@ h2::after {
     color: var(--secondary-color);
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .command-card ul {
     list-style: none;
+    text-align: justify;
 }
 
 .command-card li {
     margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
+    text-align: justify;
 }
 
 .shortcut {
@@ -315,6 +323,7 @@ h2::after {
 
 .component-card li {
     margin-bottom: 0.5rem;
+    text-align: justify;
 }
 
 .tip {
@@ -344,14 +353,17 @@ h2::after {
     color: var(--secondary-color);
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .recurso-card ul {
     list-style: none;
+    text-align: justify;
 }
 
 .recurso-card li {
     margin-bottom: 0.8rem;
+    text-align: justify;
 }
 
 .recurso-card a {
@@ -365,15 +377,22 @@ h2::after {
 }
 
 footer {
-    text-align: center;
-    padding: 2rem;
     background-color: var(--primary-color);
     color: white;
+    padding: 2rem 0;
+    margin-top: 4rem;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    text-align: center !important;
 }
 
 /* Animaciones */
@@ -389,20 +408,45 @@ footer {
 }
 
 /* Media Queries */
+@media (max-width: 1200px) {
+    nav ul {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .commands-grid,
+    .teoria-grid,
+    .recursos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
         gap: 1rem;
     }
 
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    main {
+        margin-top: 150px;
+    }
+
     .commands-grid,
-    .component-info,
-    .recursos-grid {
+    .teoria-grid,
+    .recursos-grid,
+    .component-info {
         grid-template-columns: 1fr;
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .hero p {
@@ -412,18 +456,46 @@ footer {
     h2 {
         font-size: 2rem;
     }
+
+    .intro-image img,
+    .intro-figma-image img,
+    .fundamentos-image img,
+    .comandos-gif img,
+    .componentes-image img,
+    .prototipado-gif img {
+        transform: scale(1.0);
+    }
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    main {
+        padding: 1rem 0;
+    }
+    
+    .hero {
+        padding: 2rem 1rem;
+    }
+
     nav ul {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
+        gap: 0.5rem;
     }
 
     .shortcut {
-        min-width: 80px;
-        font-size: 0.8rem;
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .intro-image img,
+    .intro-figma-image img,
+    .fundamentos-image img,
+    .comandos-gif img,
+    .componentes-image img,
+    .prototipado-gif img {
+        transform: scale(1.0);
     }
 }
 
@@ -461,12 +533,14 @@ footer {
     font-size: 1.5rem;
     border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 0.5rem;
+    text-align: center;
 }
 
 .teoria-card h4 {
     color: var(--primary-color);
     margin: 1rem 0;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .concepto-content ul {
@@ -518,6 +592,7 @@ footer {
     color: var(--primary-color);
     margin: 1.5rem 0 1rem;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .component-card strong {
@@ -546,32 +621,43 @@ footer {
 .comandos-gif,
 .componentes-image,
 .prototipado-gif {
-    margin: 2rem auto;
     text-align: center;
-    max-width: 100%;
+    margin: 2rem 0;
 }
 
 .intro-figma-image img,
 .fundamentos-image img,
-.comandos-gif img,
 .componentes-image img,
 .prototipado-gif img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    transition: all 0.4s ease;
-    filter: brightness(1) contrast(1.05);
+    width: 804px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Estilo para mejorar la nitidez de la imagen de Figma */
+.intro-figma-image img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+.comandos-gif img {
+    width: 680px;
+    height: 336px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .intro-figma-image img:hover,
 .fundamentos-image img:hover,
-.comandos-gif img:hover,
 .componentes-image img:hover,
-.prototipado-gif img:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-    filter: brightness(1.05) contrast(1.1);
+.prototipado-gif img:hover,
+.comandos-gif img:hover {
+    transform: scale(1.05);
 }
 
 /* Estilos específicos para cada sección */
@@ -609,6 +695,9 @@ footer {
     .comandos-gif img,
     .componentes-image img,
     .prototipado-gif img {
+        width: 95vw;
+        max-width: 400px;
+        height: 220px;
         border-radius: 10px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
@@ -630,19 +719,157 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .intro-figma-image,
-    .fundamentos-image,
-    .comandos-gif,
-    .componentes-image,
-    .prototipado-gif {
-        margin: 1.5rem auto;
-    }
-    
     .intro-figma-image img,
     .fundamentos-image img,
     .comandos-gif img,
     .componentes-image img,
     .prototipado-gif img {
+        width: 98vw;
+        max-width: 98vw;
+        height: 160px;
         border-radius: 8px;
     }
-} 
+}
+
+/* Estilos generales para justificar textos */
+p, ul, ol, li {
+    text-align: justify;
+}
+
+/* Centrar títulos de subsecciones */
+.intro-text h3,
+.component-card h4,
+.teoria-card h4 {
+    text-align: center;
+}
+
+/* Mantener centrado el hero */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilos para los textos introductorios de las secciones */
+.teoria-intro p,
+.fundamentos-intro p {
+    text-align: justify !important;
+    margin-bottom: 1em;
+}
+
+/* Eliminar el margen del último párrafo para un espaciado consistente */
+.teoria-intro p:last-child,
+.fundamentos-intro p:last-child {
+    margin-bottom: 0;
+}
+
+/* Mantener centradas las listas de navegación y elementos específicos */
+nav ul,
+.intro-text ul {
+    text-align: center;
+}
+
+nav a {
+    text-align: center;
+}
+
+/* Centrar contenido del footer */
+.footer-content {
+    text-align: center;
+}
+
+/* Centrar elementos de lista en cards pero justificar el contenido */
+.command-card ul,
+.component-card ul,
+.recurso-card ul,
+.teoria-card ul {
+    text-align: justify;
+}
+
+.command-card li,
+.component-card li,
+.recurso-card li,
+.teoria-card li,
+.intro-text li {
+    text-align: justify;
+}
+
+/* Reglas específicas para justificación de textos y centrado de títulos */
+body p,
+.intro-text p,
+.teoria-intro p,
+.fundamentos-intro p,
+.component-card p,
+.teoria-card p,
+.recurso-card p {
+    text-align: justify !important;
+}
+
+/* Centrar solo los títulos principales */
+h2,
+.command-card h3,
+.component-card h3,
+.recurso-card h3,
+.teoria-card h3,
+.feature-card h3,
+.intro-text h3,
+.component-card h4,
+.teoria-card h4 {
+    text-align: center !important;
+}
+
+/* Justificar listas pero mantener elementos de navegación centrados */
+.command-card ul,
+.component-card ul,
+.teoria-card ul,
+.intro-text ul {
+    text-align: justify;
+}
+
+.command-card li,
+.component-card li,
+.teoria-card li,
+.intro-text li {
+    text-align: justify;
+}
+
+/* Mantener centrados elementos específicos */
+.hero,
+.hero h1,
+.hero p,
+.footer-content,
+nav ul,
+nav a,
+.logo h2 {
+    text-align: center !important;
+}
+
+/* Centrar textos introductorios de secciones */
+.teoria-intro p,
+.fundamentos-intro p {
+    text-align: justify !important;
+}
+
+/* Centrar textos de las cards de recursos */
+.recurso-card ul, .recurso-card li {
+    text-align: center;
+    list-style-position: inside;
+}
